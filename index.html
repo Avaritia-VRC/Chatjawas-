@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nissan Silvia History</title>
+  <meta name="description" content="A website about the history of Nissan Silvia.">
+  <meta name="keywords" content="Nissan Silvia, JDM, car history, Silvia S15, S13">
+
+  
+  <link href="assets/img/favicon.png" rel="icon">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <section class="container my-5">
+  <h2 class="text-center mb-4">Nissan Silvia Generations</h2>
+
+  <div class="row g-4">
+    <!-- S13 -->
+    <div class="col-md-4 text-center">
+      <img src="assets/img/20231127-nissan-silvia-s13-01.jpg.webp" alt="Nissan Silvia S13" class="img-fluid" style="border-radius: 10px;">
+      <h4 class="mt-3">Silvia S13</h4>
+      <p>Produced from 1988 to 1994, the S13 is iconic for its pop-up headlights and was a favorite among drifters worldwide.</p>
+    </div>
+
+    <!-- S14 -->
+    <div class="col-md-4 text-center">
+      <img src="assets/img/nissan_silvia_s14_front_side_1993-1000x608.jpg" alt="Nissan Silvia S14" class="img-fluid" style="border-radius: 10px;">
+      <h4 class="mt-3">Silvia S14</h4>
+      <p>The S14 1993–1998 with two facelift one called zenki and the thoers called kouki, this one featured more aggressive body and improved suspension — a modern update to the Silvia line.</p>
+    </div>
+
+    <!-- S15 -->
+    <div class="col-md-4 text-center">
+      <img src="assets/img/s15.jpeg" alt="Nissan Silvia S15" class="img-fluid" style="border-radius: 10px;">
+      <h4 class="mt-3">Silvia S15</h4>
+      <p>Launched in 1999, the S15 featured a more angular design and the SR20DET engine, solidifying its legend status.</p>
+    </div>
+  </div>
+</section>
+
+
+  <style>
+  
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    #welcomeMessage {
+      background-color: #e60012;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .user-input-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .user-input-section input {
+      padding: 8px;
+    }
+    .user-input-section button {
+      padding: 8px 12px;
+      background-color: #e60012;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+
+<body onload="showWelcome()">
+
+  
+  <div id="welcomeMessage"></div>
+
+  
+  <div class="user-input-section">
+    <h2>What’s your favorite Silvia generation?</h2>
+    <input type="text" id="silviaGen" placeholder="e.g. S13, S15">
+    <button onclick="showGen()">Submit</button>
+    <p id="response"></p>
+  </div>
+
+  
+  <footer id="footer" class="footer">
+   
+    <div class="container text-center mt-4">
+      <p>ID: 21229073 | Name:Chatchawat vichitkamthorn</p>
+    </div>
+  </footer>
+
+
+
+ 
+  <script>
+    
+    function showWelcome() {
+      document.getElementById("welcomeMessage").innerText =
+        "Welcome to the Nissan Silvia History Page! can you tell me about your favorite silvia";
+    }
+
+    
+    function showGen() {
+      let gen = document.getElementById("silviaGen").value;
+      if (gen.trim() !== "") {
+        document.getElementById("response").innerText =
+          "Nice choice! You like the Silvia " + gen + "!";
+      } else {
+        document.getElementById("response").innerText =
+          "Please enter a generation (e.g., S13, S15)";
+      }
+    }
+  </script>
+
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+ 
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
